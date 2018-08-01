@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.fujion.webjars</groupId>
+		<artifactId>fujion-webjars</artifactId>
+		<version>2.1.0</version>
+	</parent>
+
+	<name>JQuery QR Code Plugin</name>
+	<artifactId>fujion-jquery-qrcode</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<description>JQuery QR code plugin.</description>
+
+	<properties>
+		<systemjs>
+			{
+				"paths": {
+					"jquery-qrcode": "js/jquery.qrcode.js"
+				}
+			}			
+		</systemjs>
+	</properties>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>precompile</id>
+						<configuration>
+							<target>
+								<copy todir="${webjar.target}">
+									<fileset dir="${webjar.source}"/>
+								</copy>
+							</target>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.samaxes.maven</groupId>
+				<artifactId>minify-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
