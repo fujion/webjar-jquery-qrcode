@@ -8,7 +8,7 @@
 	</parent>
 
 	<name>JQuery QR Code Plugin</name>
-	<artifactId>fujion-jquery-qrcode</artifactId>
+	<artifactId>webjar-jquery-qrcode</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<description>JQuery QR code plugin.</description>
 
