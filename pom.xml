@@ -9,7 +9,7 @@
 
 	<name>JQuery QR Code Plugin</name>
 	<artifactId>webjar-jquery-qrcode</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.0-1-SNAPSHOT</version>
 	<description>JQuery QR code plugin.</description>
 
 	<properties>
@@ -45,8 +45,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-  <scm>
-    <tag>1.0.0</tag>
-  </scm>
 </project>
