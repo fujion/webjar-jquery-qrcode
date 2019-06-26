@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.fujion.webjars</groupId>
 		<artifactId>fujion-webjars</artifactId>
-		<version>2.1.1</version>
+		<version>2.1.3-SNAPSHOT</version>
 	</parent>
 
 	<name>JQuery QR Code Plugin</name>
@@ -13,6 +13,7 @@
 	<description>JQuery QR code plugin.</description>
 
 	<properties>
+		<skip.minification>false</skip.minification>
 		<systemjs>
 			{
 				"paths": {
@@ -38,10 +39,6 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>com.samaxes.maven</groupId>
-				<artifactId>minify-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
