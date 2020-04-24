@@ -14,13 +14,6 @@
 
 	<properties>
 		<skip.minification>false</skip.minification>
-		<systemjs>
-			{
-				"paths": {
-					"jquery-qrcode": "js/jquery.qrcode.js"
-				}
-			}			
-		</systemjs>
 	</properties>
 	
 	<build>

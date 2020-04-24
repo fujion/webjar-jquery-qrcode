@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "jquery-qrcode": "js/jquery.qrcode.js"
+  }
+}
