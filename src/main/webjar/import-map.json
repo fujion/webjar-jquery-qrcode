@@ -1,5 +1,5 @@
 {
-  "imports": {
-    "jquery-qrcode": "js/jquery.qrcode.js"
+  "paths": {
+    "jquery-qrcode": "dist/jquery.qrcode.js"
   }
 }
