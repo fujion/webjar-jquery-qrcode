@@ -12,6 +12,8 @@
 	<version>1.0.0-1-SNAPSHOT</version>
 	<description>JQuery QR code plugin.</description>
 
+	<!-- Usual sources (git, npm) don't have working copies. -->
+
 	<properties>
 		<skip.minification>false</skip.minification>
 	</properties>
