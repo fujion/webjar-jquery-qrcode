@@ -4,18 +4,19 @@
 	<parent>
 		<groupId>org.fujion.webjars</groupId>
 		<artifactId>fujion-webjars</artifactId>
-		<version>3.0.0</version>
+		<version>3.2.0-SNAPSHOT</version>
 	</parent>
 
 	<name>JQuery QR Code Plugin</name>
 	<artifactId>webjar-jquery-qrcode</artifactId>
-	<version>1.0.0-10</version>
+	<version>1.0.0-11</version>
 	<description>JQuery QR code plugin.</description>
 
 	<!-- Usual sources (git, npm) don't have working copies. -->
 
 	<properties>
 		<skip.minification>false</skip.minification>
+		<npm-install.skip>true</npm-install.skip>
 	</properties>
 	
 	<build>
