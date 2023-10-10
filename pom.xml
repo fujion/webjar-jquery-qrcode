@@ -9,18 +9,33 @@
 
 	<name>JQuery QR Code Plugin</name>
 	<artifactId>webjar-jquery-qrcode</artifactId>
-	<version>1.0.0-11</version>
+	<version>1.0.0-11-SNAPSHOT</version>
 	<description>JQuery QR code plugin.</description>
 
 	<!-- Usual sources (git, npm) don't have working copies. -->
 
 	<properties>
 		<skip.minification>false</skip.minification>
-		<npm-install.skip>true</npm-install.skip>
 	</properties>
-	
+
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.fujion.webjars</groupId>
+				<artifactId>webjar-validator-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>validate-webjar</id>
+						<configuration>
+							<rules>
+								<rule>file_exists import-map.json</rule>
+								<rule>file_exists LICENSE.txt</rule>
+								<rule>file_exists dist/jquery.qrcode.js</rule>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
