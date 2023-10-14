@@ -15,7 +15,7 @@
 	<!-- Usual sources (git, npm) don't have working copies. -->
 
 	<properties>
-		<skip.minification>false</skip.minification>
+		<npm-install.skip>false</npm-install.skip>
 	</properties>
 
 	<build>
@@ -31,6 +31,7 @@
 								<rule>file_exists import-map.json</rule>
 								<rule>file_exists LICENSE.txt</rule>
 								<rule>file_exists dist/jquery.qrcode.js</rule>
+								<rule>file_exists dist/jquery.qrcode.min.js</rule>
 							</rules>
 						</configuration>
 					</execution>
@@ -43,8 +44,11 @@
 						<id>precompile</id>
 						<configuration>
 							<target>
-								<copy todir="${webjar.target}">
-									<fileset dir="${webjar.source}" />
+								<copy todir="${src.rootdir}">
+									<fileset dir="${basedir}/staging" />
+									<filterchain>
+										<expandproperties />
+									</filterchain>
 								</copy>
 							</target>
 						</configuration>
