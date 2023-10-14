@@ -1,7 +1,7 @@
 const {src, dest, series} = require('gulp');
 const minifyJS = require('gulp-minify');
 
-const srcDir = '${src.rootdir}/';
+const srcDir = '${webjar.staging}/';
 const destDir = '${webjar.target}/';
 
 function task1() {
